@@ -1,0 +1,49 @@
+
+// @import '../../../../.././utils/settings';
+@import '/src/assets/settings';
+
+.main {
+    height: 100%;
+    overflow: hidden;
+}
+.container__col1-text{
+    text-align: center;
+    color: $color-primary;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.container{
+    display: flex;
+    // background: blue;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.container__col1{
+    // background:red;
+    margin-top: -13em;
+    width: 450px;
+}
+.container__input{
+    width: 100%;
+}
+.container__col1-fields{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background: green;
+    height: 100%;
+}
+.container__col2{
+    // background: yellow;
+    margin-left: 100px;
+}
+.container__col2-img{
+    
+    width: 80%;
+    // height: 200px;
+    // width: 80%;
+}

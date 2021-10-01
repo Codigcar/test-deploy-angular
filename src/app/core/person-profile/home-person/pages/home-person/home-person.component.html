@@ -1,0 +1,15 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <div class="container__body">
+    <div class="container__body_card" *ngFor="let item of listProducts">
+      <div class="container__body__grid">
+        <img class="container__body__img" src="{{ item.photo }}" alt="iamge" />
+        <p>{{ item.business_name }}</p>
+        <p>{{ item.address }}, {{ item.district }}</p>
+        <button mat-raised-button color="primary" class="container__body__button" (click)="selectedVeterinary(item.id)" > 
+          Elegir veterinaria
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

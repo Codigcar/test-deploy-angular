@@ -1,0 +1,20 @@
+.container{
+    background: yellowgreen;
+}
+.container__body{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+.container__body__grid{
+    background: yellow;
+   
+}
+.container__body__img{
+    width: 100px;
+    height: 100px;
+}
+.container__body__button{
+    margin-bottom: 20px;
+}

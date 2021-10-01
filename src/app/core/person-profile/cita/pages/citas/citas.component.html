@@ -1,0 +1,51 @@
+<div class="main">
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="container__col1">
+      <h1 class="container__col1-text">¡Realiza tu Cita!</h1>
+
+      <form (ngSubmit)="onSubmit()" class="container__col1-fields">
+        <mat-form-field appearance="outline" class="container__input">
+          <mat-label>Servicio</mat-label>
+          <input matInput placeholder="" autocomplete="off" />
+          <!-- <mat-icon matSuffix class="color-primary">visibility</mat-icon> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="container__input">
+          <mat-label>Mascota</mat-label>
+          <input matInput placeholder="" autocomplete="off" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="container__input">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker" [min]="minDate" >
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+        <mat-form-field appearance="outline" class="container__input">
+          <mat-label>Hora</mat-label>
+          <input matInput placeholder=""  autocomplete="off"/>
+          <!-- <mat-icon matSuffix class="color-primary">visibility</mat-icon> -->
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="container__input">
+          <mat-label>Mensaje</mat-label>
+          <input matInput placeholder=""  autocomplete="off"/>
+          <!-- <mat-icon matSuffix class="color-primary">visibility</mat-icon> -->
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" class="container__button">
+          Solicitar cita
+        </button>
+      </form>
+    </div>
+    <div class="container__col2">
+      <img
+        src="../../../../../../assets/cita.svg"
+        class="container__col2-img"
+        alt=""
+      />
+    </div>
+  </div>
+</div>

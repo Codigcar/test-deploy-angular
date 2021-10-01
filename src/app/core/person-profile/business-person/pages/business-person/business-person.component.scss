@@ -1,0 +1,42 @@
+.container__header {
+    width: 100%;
+    background-image: url("../../../../../../assets/veterinary.jpg");
+    height: 60%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.container__body {
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.services__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+.services__items-item {
+    background: yellowgreen;
+    position: relative;
+    padding-bottom: 40px;
+}
+.services__items-item-buttom {
+    position: absolute;
+    // top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    // display: none;
+    &:hover{
+        background: #000;
+        // display: true;
+    }
+}

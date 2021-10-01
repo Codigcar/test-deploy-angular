@@ -1,0 +1,48 @@
+<app-navbar></app-navbar>
+<div class="container__header">
+  <div class="wave" style="height: 150px; overflow: hidden">
+    <svg
+      viewBox="0 0 500 150"
+      preserveAspectRatio="none"
+      style="height: 100%; width: 100%"
+    >
+      <path
+        d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+        style="stroke: none; fill: white"
+      ></path>
+    </svg>
+  </div>
+</div>
+<div class="container__body">
+  <div class="nosotros">
+    <h1>Nosotros</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+      eveniet iure consequatur nihil, provident, dolore veniam minima quos in
+      earum excepturi? Suscipit quos facere alias harum ratione fugit eum
+      accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Temporibus eveniet iure consequatur nihil, provident, dolore veniam minima
+      quos in earum excepturi? Suscipit quos facere alias harum ratione fugit
+      eum accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Temporibus eveniet iure consequatur nihil, provident, dolore veniam minima
+      quos in earum excepturi? Suscipit quos facere alias harum ratione fugit
+      eum accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Temporibus eveniet iure consequatur nihil, provident, dolore veniam minima
+      quos in earum excepturi? Suscipit quos facere alias harum ratione fugit
+      eum accusamus.
+    </p>
+  </div>
+  <div class="services">
+      <h1>Servicios</h1>
+      <div class="services__items">
+        <div class="services__items-item" *ngFor="let item of listServices">
+          <img src={{item.photo}} alt="">
+          <p>{{item.name}}</p>
+          <p>{{item.description}}</p>
+          <button mat-raised-button color="primary" class="services__items-item-buttom" (click)="selectedService(item.id)" >
+            Elegir
+          </button>
+        </div>
+      </div>
+  </div>
+</div>
